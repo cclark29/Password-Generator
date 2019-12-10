@@ -1,0 +1,20 @@
+
+
+
+#topline{
+    width: 730px;
+    height:3px;
+    background:#dddddd; 
+    margin-bottom:5px;
+    margin-left:0px;
+    padding-right:30px;
+}
+
+#display{
+    width: 100%;
+    height: 204px;
+}
+
+p{
+    margin-left:273px;
+}
