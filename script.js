@@ -15,15 +15,19 @@ const upperEl = document.getElementById('uppercase');
 const lowerEl = document.getElementById('lowercase');
 const numberEl = document.getElementById('numbersEl');
 const symbolEl = document.getElementById('symbol');
-const generate = document.getElementById('generate');
+var generate = document.querySelector("#generate");
 const clipboardEl = document.getElementById('clipboard');
 
 
+generate.addEventListener("click", function(event) {
+    event.preventDefault();
+
+console.log(event);
 
 //
 
 
-// I need a for loop to loop the number of times inputed for length, using the true reponses//
+// I need a for loop t the number of times inputed for length, using the true reponses//
 
 
 
@@ -52,4 +56,4 @@ function getRandomUpper() {
 // Have to run function to get random passowrd//
 
 // have to print out out put//
-
+});
