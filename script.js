@@ -1,40 +1,34 @@
-//create the variables//
 
-
-
-
-var confirmSymbol = confirm(" Do you want to use special characters?");
+var confirmSymbol = confirm("Do you want to use special characters?");
 var confirmNumber = confirm("Do you want to use numbers characters?");
 var confirmLower = confirm("Do you want to use lowercase characters");
 var confirmUpper = confirm("Do you want to use upper case characters");
-var promptLengthEl = prompt("How many Characters pick between 8-128");
-
-const randomFunc = {
-    special:getRandomSymbol,
-    number:getRandomNumber,
-    lower:getRandomNumber,
-    upper:getRandomUpper,
-   
-
-};
+var promptLength = prompt("How many characters pick between 8-128");
 
 
+
+
+//objects//
 
 const resultEl = document.getElementById('result');
-const lengthEl = document.getElementById('length');
-const uppercaseEl = document.getElementById('uppercase');
-const lowercaseEl = document.getElementById('lowercase');
-const numbersEl = document.getElementById('numbersEl');
+const upperEl = document.getElementById('uppercase');
+const lowerEl = document.getElementById('lowercase');
+const numberEl = document.getElementById('numbersEl');
 const symbolEl = document.getElementById('symbol');
-const generateEl = document.getElementById('generate');
+const generate = document.getElementById('generate');
 const clipboardEl = document.getElementById('clipboard');
 
-generateEl.addEventListener('click', () => {
-    const hasLower = lowercaseEl.value;
-    console.log(hasLower);
-})
 
 
+//
+
+
+// I need a for loop to loop the number of times inputed for length, using the true reponses//
+
+
+
+
+// functions//
 
 function getRandomSymbol() {
     const symbols = '!@#$%^&*()=<>/,.';
@@ -51,6 +45,7 @@ function getRandomUpper() {
 }
 
 
+     
 
 //Have to make selection random//
 
