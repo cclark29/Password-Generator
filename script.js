@@ -10,7 +10,7 @@ var promptLength = prompt("How many characters pick between 8-128");
 
 //objects//
 
-const resultEl = document.getElementById("#result");
+const resultEl = document.getElementById("result");
 const upperEl = document.getElementById('uppercase');
 const lowerEl = document.getElementById('lowercase');
 const numberEl = document.getElementById('numbersEl');
@@ -36,13 +36,16 @@ generate.addEventListener("click", function(event) {
     var hasLength = promptLength;
     event.preventDefault();
 
-resultEl.innerText = generatePassword(
+
+    var pass  = generatePassword(
     hasLower, 
     hasUpper, 
     hasNumber, 
     hasSymbol, 
     hasLength
     );
+
+    resultEl.value = pass
 });
 
 
@@ -72,9 +75,9 @@ for(let i = 0; i < length; i+= typesCount ) {
 
     generatePassword += randomFunc[funcName]();
   });
-}
 
-console.log(generatePassword);
+}
+  return generatePassword
 }
 
 // I need a for loop t the number of times inputed for length, using the true reponses//
