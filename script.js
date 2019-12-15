@@ -46,6 +46,7 @@ generate.addEventListener("click", function(event) {
     );
 
     resultEl.value = pass
+    alert("Success")
 });
 
 //copy password to the clipboard//
@@ -54,7 +55,7 @@ clipboard.addEventListener("click", function(event) {
     const password = resultEl.value;
     event.preventDefault();
 
-    console.log(password)
+    
 
     if(!password) {
         return;
@@ -85,7 +86,7 @@ function generatePassword(lower,upper,number,symbol,length) {
         item =>Object.values(item)[0]
     );
    
-    console.log("typesArr: ", typesArr);
+
 
     if(typesCount ===0) {
         return"";
@@ -100,6 +101,7 @@ for(let i = 0; i < length; i+= typesCount ) {
 
 }
   return generatePassword
+
 }
 
 // I need a for loop t the number of times inputed for length, using the true reponses//

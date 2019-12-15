@@ -1,5 +1,10 @@
 
 
+
+body{
+    background:beige
+}
+
 h1{
     margin-left: 192px;
 }
@@ -26,5 +31,30 @@ p{
     margin-left:273px;
 }
 
+#clipboard{
+
+    margin-left: 505px;
+}
 
    
+@media screen and (max-width: 996px){
+
+h1{
+    margin-left: 53px;
+    width: 378px;
+}
+h2{
+    width: 328px;
+    margin-left: 76px; 
+}
+p{
+    margin-left: 152px;  
+}
+#topline{
+    background:beige;
+}
+#clipboard{
+
+    margin-left: 225px;
+}
+}
